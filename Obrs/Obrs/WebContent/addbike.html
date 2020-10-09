@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>login form</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="addbike.css">
+</head>
+<body>
+	<div class="amal">
+	<div class="head">
+	<h1> RIDE-NOW   BIKE RENTALS</h1>
+	<div class="form-box">
+	<div class="button-box">
+	<div id="btn"></div>
+	<button type="button" class="toggle-btn">ADD BIKE</button>
+</div>
+<form  action="AddbikeController" id="login" class="input-group">
+	<input type="text" name="b_id" class="input-field" placeholder="BikeID" required>
+	<input type="text" name="model" class="input-field" placeholder="Model" required>
+	<input type="text" name="pday_rent" class="input-field" placeholder="Per-day rent" required>
+	<input type="text" name="colour" class="input-field" placeholder="Colour" required>
+	<input type="text" name="reg_number" class="input-field" placeholder="Registration number" required>
+	<label for="category">Category</label>
+	<select class="input_field" name="category">
+    <option name="commuter">commuter</option>
+    <option name="cruiser bike">cruiser bike</option>
+    <option name="sport motor cycle">sport motor cycle</option>
+    <option name="scooty">scooty</option>
+    </select>
+    <select class="input_field" name="rent_type">
+    <option name="hourly">hourly</option>
+    <option name="daily">daily</option>
+    <option name="monthly">monthly</option>
+    </select>
+	<input type="text" name="engine_cc" class="input-field" placeholder="Engine CC" required>
+	<label for="Status">Status</label>
+	<select class="input_field" name="status">
+    <option name="available">Available</option>
+    <option name="Not_available">Not Available</option>
+    </select>
+	<button type="submit" class="submit-btn">Confirm</button>
+
+
+</form>
+</div>
+</div>
+</body>
+</html>
